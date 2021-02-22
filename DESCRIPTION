@@ -1,0 +1,29 @@
+Package: rameritrade
+Title: 'TD Ameritrade' API Interface for R
+Version: 0.1.5
+Author: Anthony Balentine [aut, cre]
+Authors@R:
+    person(given = "Anthony",
+           family = "Balentine",
+           role = c("aut", "cre"),
+           email = "exploringfinance1@gmail.com")
+Maintainer: Anthony Balentine <exploringfinance1@gmail.com>
+URL: https://exploringfinance.github.io/rameritrade/
+BugReports: https://github.com/exploringfinance/rameritrade/issues
+Description: Use R to interface with the 'TD Ameritrade' API <https://developer.tdameritrade.com/>.
+    Functions include authentication, trading, price requests, account information, and option 
+    chains. A user will need a TD brokerage account and TD Ameritrade developer app. See README 
+    for authentication process and examples.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    httr,
+    urltools (>= 1.7.3),
+    lubridate,
+    dplyr,
+    jsonlite,
+    magrittr
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat
