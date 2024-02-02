@@ -1,0 +1,13 @@
+^LICENSE\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
+^README\.Rmd$
+/tests*
+^cran-comments\.md$
+^CRAN-RELEASE$
+.git/
+^\.github$
+.proj.user
+.gitignore
+.Rhistory
+^\.git$

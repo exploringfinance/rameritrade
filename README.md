@@ -467,6 +467,24 @@ str(SPY$fullChain)
 # $ inTheMoney            : logi [1:552] FALSE FALSE FALSE FALSE FALSE FALSE ...
 # $ mini                  : logi [1:552] FALSE FALSE FALSE FALSE FALSE FALSE ...
 # $ expireDate            : Date[1:552], format: "2020-09-30" "2020-09-30" "2020-09-30" "2020-09-30" ...
+
+### Get Options for a specific index like SPX or VIX
+vix = td_optionChain(
+  "$VIX.X",
+  strikes = 10,
+  inclQuote = TRUE,
+  startDate = Sys.Date(),
+  endDate = Sys.Date() + 180
+) 
+str(vix)
+
+# List of 2
+# $ underlying: tibble[,23] [1 × 23] (S3: tbl_df/tbl/data.frame)
+# ..$ symbol           : chr "$VIX.X"
+# ..$ description      : chr "CBOE VOLATILITY INDEX S&P500"
+# ..$ change           : num -3.29
+# ..$ percentChange    : num -10.7
+# .....
 ```
 
 ## Working with multiple accounts
